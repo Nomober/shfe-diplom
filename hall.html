@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор места</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="user">
+    <header class="user-header">
+        <h1 class="user-header__logo logo">идём<span class="logo-letter">в</span>кино</h1>
+    </header>
+    <main class="user-hall">
+        <div class="user-hall__info">
+            <!-- <h2 class="user-hall__seans-name">Звёздные войны</h2>
+            <p class="user-hall__seans-start">Начало сеанса: 18:30</p>
+            <p class="user-hall__hall-name">Зал 1</p> -->
+        </div>
+        <div class="user-scheme">
+            <img class="user-scheme__screen" src="images/user-screen.png" alt="Экран">
+            <div class="user-scheme__wrapper">
+                <div class="user-scheme__grid">
+                    <span class="user-scheme__seat user__free-seat">
+                </div>
+            </div>
+            <div class="user-scheme__info">
+                <div class="user-scheme__info-seat legend-standart"><span class="user-scheme__seat user__free-seat"></span></div>
+                <div class="user-scheme__info-seat legend-vip"><span class="user-scheme__seat user__vip-seat"></span></div>
+                <div class="user-scheme__info-seat"><span class="user-scheme__seat user__busy-seat"></span> Занято</div>
+                <div class="user-scheme__info-seat"><span class="user-scheme__seat user__selected-seat"></span> Выбрано</div>
+            </div>
+        </div>
+        <button class="user-hall__reserve button">Забронировать</button>
+    </main>
+    <script defer src="js/xhr.js"></script>
+    <script defer src="js/hall.js"></script>
+</body>
+</html>
