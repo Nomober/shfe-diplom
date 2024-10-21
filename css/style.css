@@ -230,6 +230,7 @@ button:hover{
 }
 
 .section__title{
+	text-transform: uppercase;
 	margin-right: auto;
 	font-size: 22px;
 	font-weight: 700;

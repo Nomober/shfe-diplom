@@ -101,7 +101,9 @@ function renderHallSeats () {
 }
 
 function cancelHallSeats () {
-	getHallSeats(configActiveHall.id);
+	data.getData()
+	hallItems = data.info.halls;
+	getHallSeats(configActiveHall.id)
 }
 
 configConfirm.addEventListener('click', saveHallSeats);

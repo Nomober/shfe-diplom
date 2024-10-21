@@ -47,6 +47,7 @@ class allData {
 				
 		    	renderHallsList(this.info.halls);
 		    	renderSessionsList(this.info.halls, this.info.seances);
+				location.reload(); 
 		    });
 			
 	}
@@ -63,6 +64,7 @@ class allData {
 					
 			    	renderHallsList(this.info.halls);
 			    	renderSessionsList(this.info.halls, this.info.seances);
+					location.reload();
 				});	
 	}
 
@@ -76,6 +78,7 @@ class allData {
 		    .then( data => {
 		    	console.log(data);
 		    	this.info.halls.find(x => x.id == data.result.id).hall_config = data.result.hall_config;
+				location.reload();
 		    })
 	}
 
@@ -89,6 +92,7 @@ class allData {
 		    	console.log( data );
 		    	this.info.halls.find(x => x.id == data.result.id).hall_price_standart = data.result.hall_price_standart;
 		    	this.info.halls.find(x => x.id == data.result.id).hall_price_vip = data.result.hall_price_vip;
+				location.reload();
 		    })
 	}
 
@@ -114,6 +118,7 @@ class allData {
 		    	filmItems = this.info.films;
 
 		    	renderFilmsList(this.info.films);
+				location.reload();
 		    })
 	}	
 	
@@ -130,6 +135,7 @@ class allData {
 
 		    	renderFilmsList(this.info.films);
 		    	renderSessionsList(this.info.halls, this.info.seances);
+				location.reload();
 			});
 	}
 
